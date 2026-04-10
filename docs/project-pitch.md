@@ -45,12 +45,18 @@ Recreational to semi-serious poker players who:
 |---|---|
 | Voice hand entry | Speak a hand, AI parses it into structured format |
 | Text hand entry | Type a hand description as a fallback |
-| Structured hand import | Upload PokerStars / GGPoker hand history files |
 | Visual hand renderer | Card-by-card, street-by-street breakdown |
 | AI hand analysis | Coaching advice per hand |
+| Shareable hand cards | Generate a public link or image to share a hand |
+
+## Post-MVP Features
+
+| Feature | Description |
+|---|---|
 | User accounts | Auth, profiles, hand history storage |
 | Hand library | Browse, search, filter, tag saved hands |
-| Shareable hand cards | Generate a public link or image to share a hand |
+| Bulk hand history import | Upload PokerStars / GGPoker hand history files |
+| iOS app | Follows web MVP |
 
 ---
 
@@ -116,6 +122,9 @@ Recreational to semi-serious poker players who:
 
 ## Out of Scope (MVP)
 
+- User accounts and auth
+- Hand history storage / hand library
+- Bulk hand history import
 - Real-time multiplayer / live session tracking
 - Range analysis / equity calculators
 - Native iOS app (follows web MVP)
