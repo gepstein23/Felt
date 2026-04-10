@@ -55,6 +55,14 @@ Voice/text input → Claude API parses to Hand object → Visual renderer displa
 
 ## Claude Instructions
 
+### Security
+- Security is the #1 priority
+- IAM policies must always use least privilege — specific actions and specific resource ARNs only, never `*` for actions
+- CORS `allow_origins` must never be `["*"]` — always scoped to the actual domain per environment
+- All data stores must have encryption at rest explicitly configured
+- Before marking any feature complete, perform a security review: check IAM permissions, input validation, data exposure, and network access
+- Review every new AWS resource for IAM and network exposure before committing
+
 ### Always Do
 - Update `CLAUDE.md` if the tech stack, architecture, or core conventions change
 - Update `README.md` if top-level user-facing functionality changes significantly

@@ -18,3 +18,8 @@ variable "app_name" {
   type        = string
   default     = "felt"
 }
+
+variable "cors_allow_origins" {
+  description = "Allowed CORS origins for the API — lock to your domain in prod"
+  type        = list(string)
+}

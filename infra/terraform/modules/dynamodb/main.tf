@@ -14,5 +14,9 @@ resource "aws_dynamodb_table" "hands" {
     type = "S"
   }
 
-  # Schema details to be defined in I1-3
+  server_side_encryption {
+    enabled = true
+  }
+
+  # Full schema to be defined in I1-3
 }

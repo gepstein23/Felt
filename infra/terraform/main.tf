@@ -25,9 +25,10 @@ module "lambda" {
 }
 
 module "api_gateway" {
-  source             = "./modules/api_gateway"
-  app_name           = var.app_name
-  environment        = var.environment
-  lambda_invoke_arn  = module.lambda.invoke_arn
+  source               = "./modules/api_gateway"
+  app_name             = var.app_name
+  environment          = var.environment
+  lambda_invoke_arn    = module.lambda.invoke_arn
   lambda_function_name = module.lambda.function_name
+  cors_allow_origins   = var.cors_allow_origins
 }
