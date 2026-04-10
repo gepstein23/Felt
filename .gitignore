@@ -41,3 +41,9 @@ npm-debug.log*
 .vscode/
 .idea/
 *.swp
+*.iml
+
+# Installers and binaries
+*.pkg
+*.dmg
+*.exe
