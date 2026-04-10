@@ -15,6 +15,7 @@ Felt is an AI-powered poker hand journal. Users speak or type a description of a
 - **File Storage:** S3 (bulk hand history uploads)
 - **Hosting:** AWS Amplify
 - **CI/CD:** GitHub Actions → Amplify
+- **IaC:** Terraform (`infra/terraform/`)
 
 ## Repository Structure
 
@@ -26,12 +27,16 @@ Felt/
 ├── .gitignore
 ├── docs/
 │   └── project-pitch.md   # Full project pitch and initiative breakdown
+├── assets/                # Static assets (logo, etc.)
 ├── src/
 │   ├── app/               # Next.js app directory
 │   ├── components/        # Reusable UI components
 │   ├── lib/               # Shared utilities, API clients
 │   └── types/             # TypeScript type definitions
-├── infra/                 # AWS CDK or SAM infrastructure definitions
+├── infra/
+│   └── terraform/         # All AWS infrastructure as Terraform
+│       ├── environments/  # Per-environment configs (dev, prod)
+│       └── modules/       # Reusable resource modules
 └── tests/                 # Unit and integration tests
 ```
 

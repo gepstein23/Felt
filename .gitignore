@@ -30,6 +30,13 @@ Thumbs.db
 *.log
 npm-debug.log*
 
+# Terraform
+**/.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfplan
+# Note: .terraform.lock.hcl should be committed
+
 # Editor
 .vscode/
 .idea/
